@@ -1,0 +1,18 @@
+.nav {
+  font-size: 18px;
+  font-weight: bold;
+
+  color: black;
+}
+
+.head {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0px;
+}
+
+.right {
+  margin-left: 3rem;
+}

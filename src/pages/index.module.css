@@ -1,0 +1,57 @@
+.h1 {
+  margin-top: 200px;
+  font-size: 111px;
+  line-height: 115.4%;
+  /* or 128px */
+  color: #000000;
+
+  transform: rotate(11.55deg);
+}
+
+.intro {
+  position: relative;
+  top: -2rem;
+  width: 35rem;
+  transform: rotate(-1.94deg);
+}
+
+.gradientOrange {
+  z-index: -1;
+  position: absolute;
+  width: 1598px;
+  height: 1384px;
+  left: 347x;
+  top: 79px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffa588 0%,
+    rgba(255, 205, 177, 0) 100%
+  );
+}
+
+.gradientYellow {
+  z-index: -2;
+  position: absolute;
+  width: 1598px;
+  height: 1090px;
+  left: -77px;
+  top: 8px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 247, 177, 0.84) 0%,
+    rgba(255, 236, 63, 0) 100%
+  );
+}
+@media screen and (max-width: 768px) {
+  .h1 {
+    margin-top: 100px;
+    font-size: 60px;
+  }
+
+  .intro {
+    top: 0px;
+    width: 100%;
+  }
+}
