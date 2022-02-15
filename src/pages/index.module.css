@@ -3,7 +3,7 @@
 }
 
 .title {
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .h1 {
@@ -50,7 +50,8 @@
 }
 
 .down {
-  margin-top: 160px;
+  position: absolute;
+  bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
