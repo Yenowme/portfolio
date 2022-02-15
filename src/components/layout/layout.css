@@ -3,11 +3,6 @@
 .layout {
   margin: 0px 60px;
 }
-@media screen and (max-width: 768px) {
-  .layout {
-    margin: 0px 15px;
-  }
-}
 
 html {
   -ms-text-size-adjust: 100%;
@@ -607,5 +602,17 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layout {
+    margin: 0px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .layout {
+    width: 1200px;
+    margin: auto;
   }
 }
