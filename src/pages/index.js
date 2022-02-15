@@ -6,6 +6,11 @@ import DownIcon from "../components/svgs/down"
 
 import * as Style from "./index.module.css"
 import Divider from "../components/divider/divider"
+import Sticker from "../components/sticker/sticker"
+
+import gitHubNormalImg from "../images/githubSticker_normal.png"
+import gitHubClickImg from "../images/githubSticker_click.png"
+import gitHubHoverImg from "../images/githubSticker_hover.png"
 
 const Landing = () => (
   <>
@@ -34,6 +39,14 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Landing />
+    <Sticker
+      normalImg={gitHubNormalImg}
+      hoverImg={gitHubHoverImg}
+      clickImg={gitHubClickImg}
+      alt={"gitHub"}
+      width={"140"}
+      url={"https://github.com/Yenowme"}
+    ></Sticker>
     <Divider title="PROJECTS" />
     <div className={`${Style.gradientOrange}`}></div>
     <div className={`${Style.gradientYellow}`}></div>
