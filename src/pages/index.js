@@ -5,10 +5,10 @@ import Layout from "../components/layout/layout"
 import DownIcon from "../components/svgs/down"
 
 import * as Style from "./index.module.css"
+import Divider from "../components/divider/divider"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
+const Landing = () => (
+  <>
     <div className={Style.titleWrap}>
       <div className={Style.title}>
         <h1 className={Style.h1}>
@@ -24,10 +24,17 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-
     <div className={Style.down}>
       <DownIcon />
     </div>
+  </>
+)
+
+const IndexPage = () => (
+  <Layout>
+    <Seo title="Home" />
+    <Landing />
+    <Divider title="PROJECTS" />
     <div className={`${Style.gradientOrange}`}></div>
     <div className={`${Style.gradientYellow}`}></div>
   </Layout>
