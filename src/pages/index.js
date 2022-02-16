@@ -41,7 +41,7 @@ const Stickers = () => (
       alt={"name"}
       width="385"
       height={"138"}
-      positionTop={"65%"}
+      positionTop={"70%"}
       positionLeft={"75%"}
       rotate={"-18"}
     />
@@ -49,7 +49,7 @@ const Stickers = () => (
       normalImg={start2NormalImg}
       hoverImg={start2HoverImg}
       clickImg={start2HoverImg}
-      alt={"start2"}
+      alt={"star2"}
       width="135"
       height={"135"}
       positionLeft={"65%"}
@@ -60,11 +60,11 @@ const Stickers = () => (
       normalImg={start2NormalImg}
       hoverImg={start2HoverImg}
       clickImg={start2HoverImg}
-      alt={"start2"}
+      alt={"star2"}
       width="100"
       height={"100"}
-      positionLeft={"10px"}
-      positionTop={"49%"}
+      positionLeft={"10%"}
+      positionTop={"46%"}
       rotate="-10"
     />
     <Sticker
@@ -74,8 +74,8 @@ const Stickers = () => (
       alt={"start1"}
       width="135"
       height={"135"}
-      positionLeft={"1030px"}
-      positionTop={"28%"}
+      positionLeft={"80%"}
+      positionTop={"30%"}
     />
   </>
 )
@@ -108,7 +108,7 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Landing />
     <Stickers />
-    <Divider title="PROJECTS" />
+    <Divider title="PROJECTS" style={{ marginTop: "300px" }} />
     <div className={`${Style.gradientOrange}`}></div>
     <div className={`${Style.gradientYellow}`}></div>
   </Layout>

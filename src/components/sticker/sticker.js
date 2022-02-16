@@ -14,11 +14,18 @@ export default function Sticker({
   positionLeft,
   rotate,
 }) {
-  const [isDrag, setIsDrag] = useState(false)
+  //const [isDrag, setIsDrag] = useState(false)
+  //const [isClick, setIsClick] = useState(false)
+
   const [Img, setImg] = useState(normalImg)
   const [top, setTop] = useState(positionTop)
   const [left, setLeft] = useState(positionLeft)
   const [zIndex, setZIndex] = useState(10)
+  //if (url) consolez.log("drag", isDrag, "click", isClick)
+
+  let isDrag = false
+  let isClick = false
+  console.log(isDrag, isClick)
 
   const move = (x, y) => {
     setTop(`${y - height / 2}px`)
@@ -29,29 +36,43 @@ export default function Sticker({
     move(e.pageX, e.pageY)
   }, [])
 
-  const onMouseDown = e => {
-    setIsDrag(true)
+  const onMouseDown = async e => {
     setZIndex(1000)
     setImg(clickImg)
     move(e.pageX, e.pageY)
-    setIsDrag(true)
+
+    isClick = true
+    console.log("seIsClick True", isClick)
+
+    setTimeout(() => {
+      isDrag = true
+      console.log("setIsDrag", isDrag)
+      if (!isClick) {
+        isDrag = false
+        console.log("setIsDrag", isDrag)
+      }
+    }, 300)
+
     document.addEventListener("mousemove", onMouseMove)
     e.stopPropagation()
   }
 
   const onMouseUP = e => {
-    setImg(hoverImg)
-
-    setZIndex(11)
     document.removeEventListener("mousemove", onMouseMove)
     e.target.onMouseUP = null
     e.stopPropagation()
-    setIsDrag(false)
-  }
-
-  const onClick = e => {
-    if (isDrag) setImg(clickImg)
-    if (url) window.open(url, "_blank")
+    console.log("mouseUp", isDrag, isClick)
+    if (isDrag && isClick) {
+      setImg(hoverImg)
+      setZIndex(11)
+      isDrag = false
+      isClick = false
+    } else {
+      setImg(clickImg)
+      if (url) alert("url~~~")
+      setImg(normalImg)
+      isClick = false
+    }
   }
 
   return (
@@ -65,7 +86,6 @@ export default function Sticker({
         }}
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUP}
-        onClick={onClick}
         draggable={false}
         width={width ? width + "px" : ""}
         src={Img}

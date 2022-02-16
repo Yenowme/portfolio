@@ -610,7 +610,7 @@ pre tt:after {
     margin: 0px 15px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1260px) {
   .layout {
     width: 1200px;
     margin: auto;
