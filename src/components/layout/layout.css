@@ -10,8 +10,10 @@ html {
   font: 112.5%/1.45em, "Jost", georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  height: 100%;
 }
 body {
+  height: 100%;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

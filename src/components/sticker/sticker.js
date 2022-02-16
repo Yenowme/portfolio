@@ -1,7 +1,5 @@
 import React, { useCallback, useState } from "react"
 
-import * as Style from "./sticker.moduel.css"
-
 export default function Sticker({
   normalImg,
   clickImg,

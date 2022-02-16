@@ -1,0 +1,53 @@
+.wrap {
+  height: 100vh;
+}
+
+.titleWrap {
+  display: table;
+}
+
+.title {
+  padding-top: 10vh;
+}
+
+.h1 {
+  font-size: 124px;
+  line-height: 115.4%;
+  color: #000000;
+  transform: rotate(11.55deg);
+}
+
+.intro {
+  position: relative;
+  width: 35rem;
+  transform: rotate(-1.94deg);
+}
+
+.down {
+  position: absolute;
+  bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 80px;
+  }
+
+  .intro {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .title {
+    padding-top: 20%;
+  }
+
+  .down {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .title {
+    padding-top: 20vh;
+  }
+}
