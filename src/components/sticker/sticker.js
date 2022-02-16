@@ -14,18 +14,12 @@ export default function Sticker({
   positionLeft,
   rotate,
 }) {
-  //const [isDrag, setIsDrag] = useState(false)
-  //const [isClick, setIsClick] = useState(false)
-
+  const [isDrag, setIsDrag] = useState(false)
+  const [timer, setTImer] = useState(0)
   const [Img, setImg] = useState(normalImg)
   const [top, setTop] = useState(positionTop)
   const [left, setLeft] = useState(positionLeft)
   const [zIndex, setZIndex] = useState(10)
-  //if (url) consolez.log("drag", isDrag, "click", isClick)
-
-  let isDrag = false
-  let isClick = false
-  console.log(isDrag, isClick)
 
   const move = (x, y) => {
     setTop(`${y - height / 2}px`)
@@ -41,18 +35,10 @@ export default function Sticker({
     setImg(clickImg)
     move(e.pageX, e.pageY)
 
-    isClick = true
-    console.log("seIsClick True", isClick)
-
-    setTimeout(() => {
-      isDrag = true
-      console.log("setIsDrag", isDrag)
-      if (!isClick) {
-        isDrag = false
-        console.log("setIsDrag", isDrag)
-      }
+    const st = setTimeout(() => {
+      setIsDrag(true)
     }, 300)
-
+    setTImer(st)
     document.addEventListener("mousemove", onMouseMove)
     e.stopPropagation()
   }
@@ -61,17 +47,15 @@ export default function Sticker({
     document.removeEventListener("mousemove", onMouseMove)
     e.target.onMouseUP = null
     e.stopPropagation()
-    console.log("mouseUp", isDrag, isClick)
-    if (isDrag && isClick) {
+    if (isDrag) {
       setImg(hoverImg)
       setZIndex(11)
-      isDrag = false
-      isClick = false
+      setIsDrag(false)
     } else {
       setImg(clickImg)
-      if (url) alert("url~~~")
+      if (url) window.open(url, "_blank")
+      clearTimeout(timer)
       setImg(normalImg)
-      isClick = false
     }
   }
 
