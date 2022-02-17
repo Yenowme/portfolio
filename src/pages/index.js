@@ -7,6 +7,7 @@ import Layout from "../components/layout/layout"
 import Divider from "../components/divider/divider"
 import Stickers from "./index/Stickers/Stickers"
 import Landing from "./index/Landing/Landing"
+import Projects from "./index/Projects/Projects"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Landing />
     <Stickers />
     <Divider title="PROJECTS" />
+    <Projects />
     <div className={`${Style.gradientOrange}`}></div>
     <div className={`${Style.gradientYellow}`}></div>
   </Layout>
