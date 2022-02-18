@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react"
+import React, { useCallback, useEffect, useRef, useState } from "react"
 
 export default function Sticker({
   normalImg,
@@ -19,9 +19,13 @@ export default function Sticker({
   const [left, setLeft] = useState(positionLeft)
   const [zIndex, setZIndex] = useState(10)
 
+  const target = useRef()
+
   const move = (x, y) => {
-    setTop(`${y - height / 2}px`)
-    setLeft(`${x - width / 2}px`)
+    const shiftX = target.current.parentElement.parentElement.offsetTop
+    const shiftY = target.current.parentElement.parentElement.offsetLeft
+    setTop(`${y - shiftX - height / 2}px`)
+    setLeft(`${x - shiftY - width / 2}px`)
   }
 
   const onMouseMove = useCallback(e => {
@@ -58,7 +62,7 @@ export default function Sticker({
   }
 
   return (
-    <div>
+    <div ref={target}>
       <img
         onMouseOver={() => {
           setImg(hoverImg)

@@ -1,9 +1,11 @@
 import * as React from "react"
 import DownIcon from "../../../components/svgs/down"
+import Stickers from "../Stickers/Stickers"
 import * as Style from "./landing.module.css"
 
 const Landing = () => (
   <div className={Style.wrap}>
+    <Stickers />
     <div className={Style.titleWrap}>
       <div className={Style.title}>
         <h1 className={Style.h1}>

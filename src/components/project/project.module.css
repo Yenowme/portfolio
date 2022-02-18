@@ -58,7 +58,7 @@
   margin-bottom: 8px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .contentWrap {
     flex-direction: column;
   }
@@ -67,5 +67,10 @@
     width: 100%;
     margin-top: 40px;
     margin-left: 0px;
+  }
+
+  .desc {
+    white-space: normal;
+    margin-bottom: 20px;
   }
 }
