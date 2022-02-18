@@ -1,5 +1,5 @@
 .wrap {
-  height: 100vh;
+  height: calc(100vh - 90px);
   position: relative;
 }
 
@@ -8,7 +8,7 @@
 }
 
 .title {
-  padding-top: 10vh;
+  padding-top: 14%;
 }
 
 .h1 {

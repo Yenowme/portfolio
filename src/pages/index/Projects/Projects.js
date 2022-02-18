@@ -2,7 +2,6 @@ import * as React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "../../../components/project/Project"
-import Stickers from "../Stickers/Stickers"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -14,6 +13,8 @@ const Projects = () => {
             skill
             subTitle
             title
+            text
+            subText
             featuredImage {
               childImageSharp {
                 fluid {
@@ -24,10 +25,12 @@ const Projects = () => {
           }
           id
           mdxAST
+          body
         }
       }
     }
   `)
+
   const project = data.allMdx.nodes.map(i => {
     const fm = i.frontmatter
     return (
@@ -36,22 +39,15 @@ const Projects = () => {
         date={fm.date}
         subTitle={fm.subTitle}
         skills={fm.skill}
-        text={i.mdxAST.children}
+        text={fm.text}
+        subText={fm.subText}
         key={i.id}
+        body={i.body}
         fluid={fm.featuredImage.childImageSharp.fluid}
       />
     )
   })
-  return (
-    <div
-      style={{
-        position: "relative",
-      }}
-    >
-      <Stickers></Stickers>
-      {project}
-    </div>
-  )
+  return <div>{project}</div>
 }
 
 export default Projects

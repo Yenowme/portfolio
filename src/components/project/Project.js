@@ -1,20 +1,26 @@
 import * as React from "react"
 import Img from "gatsby-image"
 import * as Style from "./project.module.css"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-const Project = ({ title, date, subTitle, text, skills, fluid, ...props }) => {
-  const textlen = text.length - 1
-  const desc = text.reduce((acc, cur, idx) => {
-    if (idx === textlen) return acc
-    return acc + cur.children[0].value + "\n\n"
-  }, "")
+const Project = ({
+  title,
+  date,
+  subTitle,
+  skills,
+  fluid,
+  text,
+  subText,
+  body,
+  ...props
+}) => {
   const skill = skills.split(",").map(i => (
     <li className={Style.skill} key={i}>
       {i}
     </li>
   ))
   return (
-    <div {...props}>
+    <div className={Style.wrap} {...props}>
       <div className={Style.titleWrap}>
         <h3 className={Style.title}>{title}</h3>
         <p className={Style.date}>{date}</p>
@@ -25,12 +31,14 @@ const Project = ({ title, date, subTitle, text, skills, fluid, ...props }) => {
         </div>
         <div className={Style.desWrap}>
           <p className={Style.subTitle}>{subTitle}</p>
-          <div className={Style.desc}>{desc}</div>
+          <div className={Style.desc}>{text}</div>
+          <div className={Style.desc}>{subText}</div>
           <div className={Style.skillsWrap}>
             <ul>{skill}</ul>
           </div>
         </div>
       </div>
+      <MDXRenderer>{body}</MDXRenderer>
     </div>
   )
 }

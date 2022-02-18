@@ -1,7 +1,7 @@
 .wrap {
   display: flex;
   align-items: baseline;
-  margin: 15px 0px;
+  margin: 15px 0px 50px 0px;
 }
 
 .line {

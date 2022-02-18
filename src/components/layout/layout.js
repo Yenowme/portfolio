@@ -1,26 +1,22 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
 
 import "./layout.css"
 import Header from "../header/header"
+import Sticker from "../sticker/sticker"
+import Divider from "../divider/divider"
+
+const shortcodes = { Sticker, Divider }
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
-    <div className="layout">
-      <Header />
-      <main>{children}</main>
-    </div>
+    <MDXProvider components={shortcodes}>
+      <div className="layout">
+        <Header />
+        <main>{children}</main>
+      </div>
+    </MDXProvider>
   )
 }
 

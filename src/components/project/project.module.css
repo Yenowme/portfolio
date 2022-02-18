@@ -1,3 +1,7 @@
+.wrap {
+  position: relative;
+}
+
 .titleWrap {
   display: flex;
   align-items: baseline;
@@ -32,6 +36,7 @@
 .desWrap {
   width: 30%;
   margin-left: 40px;
+  position: relative;
 }
 
 .subTitle {
@@ -43,6 +48,7 @@
 .desc {
   font-size: 15px;
   white-space: pre-wrap;
+  margin-bottom: 14px;
 }
 
 .skillsWrap {
