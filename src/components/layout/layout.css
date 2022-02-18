@@ -601,6 +601,15 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+p {
+  margin: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

@@ -6,7 +6,7 @@ import Project from "../../../components/project/Project"
 const Projects = () => {
   const data = useStaticQuery(graphql`
     {
-      allMdx {
+      allMdx(sort: { fields: frontmatter___order, order: ASC }) {
         nodes {
           frontmatter {
             date
@@ -19,9 +19,9 @@ const Projects = () => {
                   ...GatsbyImageSharpFluid
                 }
               }
-              id
             }
           }
+          id
           mdxAST
         }
       }
