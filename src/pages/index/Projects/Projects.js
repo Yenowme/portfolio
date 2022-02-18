@@ -8,14 +8,21 @@ const Projects = () => {
     {
       allMdx {
         nodes {
-          mdxAST
           frontmatter {
-            title
             date
             skill
             subTitle
+            title
+            featuredImage {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+              id
+            }
           }
-          id
+          mdxAST
         }
       }
     }
@@ -30,6 +37,7 @@ const Projects = () => {
         skills={fm.skill}
         text={i.mdxAST.children}
         key={i.id}
+        fluid={fm.featuredImage.childImageSharp.fluid}
       />
     )
   })

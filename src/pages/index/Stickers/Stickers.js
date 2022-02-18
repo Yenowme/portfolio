@@ -2,17 +2,17 @@ import * as React from "react"
 
 import Sticker from "../../../components/sticker/sticker"
 
-import gitHubNormalImg from "../../../images/githubSticker_normal.png"
-import gitHubClickImg from "../../../images/githubSticker_click.png"
-import gitHubHoverImg from "../../../images/githubSticker_hover.png"
-import NameNormalImg from "../../../images/NameSticker_normal.png"
-import NameHoverImg from "../../../images/NameSticker_hover.png"
-import NameClickImg from "../../../images/NameSticker_click.png"
-import starNormalImg from "../../../images/StarSticker_normal.png"
-import starHoverImg from "../../../images/StarSticker_hover.png"
-import starClickImg from "../../../images/StarSticker_click.png"
-import start2NormalImg from "../../../images/StarSticker_s_normal.png"
-import start2HoverImg from "../../../images/StarSticker_s_hover.png"
+import gitHubNormalImg from "../../../images/stickers/githubSticker_normal.png"
+import gitHubClickImg from "../../../images/stickers/githubSticker_click.png"
+import gitHubHoverImg from "../../../images/stickers/githubSticker_hover.png"
+import NameNormalImg from "../../../images/stickers/NameSticker_normal.png"
+import NameHoverImg from "../../../images/stickers/NameSticker_hover.png"
+import NameClickImg from "../../../images/stickers/NameSticker_click.png"
+import starNormalImg from "../../../images/stickers/StarSticker_normal.png"
+import starHoverImg from "../../../images/stickers/StarSticker_hover.png"
+import starClickImg from "../../../images/stickers/StarSticker_click.png"
+import start2NormalImg from "../../../images/stickers/StarSticker_s_normal.png"
+import start2HoverImg from "../../../images/stickers/StarSticker_s_hover.png"
 const Stickers = () => (
   <>
     <Sticker
