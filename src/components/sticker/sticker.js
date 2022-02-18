@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react"
+import React, { useCallback, useRef, useState } from "react"
 
 export default function Sticker({
   normalImg,
@@ -22,10 +22,12 @@ export default function Sticker({
   const target = useRef()
 
   const move = (x, y) => {
-    const shiftX = target.current.parentElement.parentElement.offsetTop
-    const shiftY = target.current.parentElement.parentElement.offsetLeft
-    setTop(`${y - shiftX - height / 2}px`)
-    setLeft(`${x - shiftY - width / 2}px`)
+    const shiftX = target.current.parentElement.offsetLeft
+    const shiftY = target.current.parentElement.offsetTop
+
+    console.log(shiftY)
+    setTop(`${y - shiftY - height / 2}px`)
+    setLeft(`${x - shiftX - width / 2}px`)
   }
 
   const onMouseMove = useCallback(e => {
@@ -39,7 +41,7 @@ export default function Sticker({
 
     const st = setTimeout(() => {
       setIsDrag(true)
-    }, 300)
+    }, 200)
     setTImer(st)
     document.addEventListener("mousemove", onMouseMove)
     e.stopPropagation()

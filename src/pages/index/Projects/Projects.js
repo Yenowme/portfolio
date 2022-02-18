@@ -2,6 +2,7 @@ import * as React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Project from "../../../components/project/Project"
+import Stickers from "../Stickers/Stickers"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -41,7 +42,16 @@ const Projects = () => {
       />
     )
   })
-  return <>{project}</>
+  return (
+    <div
+      style={{
+        position: "relative",
+      }}
+    >
+      <Stickers></Stickers>
+      {project}
+    </div>
+  )
 }
 
 export default Projects
