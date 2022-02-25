@@ -7,6 +7,7 @@
 
 .head {
   position: sticky;
+  z-index: 90;
   top: 0px;
   display: flex;
   justify-content: space-between;

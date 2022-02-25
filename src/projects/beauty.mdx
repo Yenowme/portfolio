@@ -1,53 +1,94 @@
 ---
 title: BEAUTY-SAURUS
 order: 1
-subTitle: GUI WEB CREATER
+subTitle: OPEN SOURCE GUI WEB CREATER
 date: 2021.12.15 - 2021.12.30
 skill: react,redux,node.js,express
 featuredImage: ../images/projects_thumnail/beauty_main.png
 text: beauty-saurus는 정적 웹 사이트 생성기 docusaurus를 기반으로, 비개발자도 코드 레벨이 아닌 그래픽 기반 인터페이스로 정적 웹 사이트를 쉽게 만들 수 있게 도와주는 오픈소스 프로젝트입니다.
-subText: 사이트의 랜딩페이지 스타일링 외에도 드래그 앤 드롭으로 마크다운 파일을 추가해서 페이지를 생성하는 기능도 구현했습니다.
+subText: 입력이 가능한 GUI컴포넌트를 props에 따라 달라지도록 설계하고, drag&drop으로 마크다운 파일을 받아 파일시스템에 저장하도록 서버와 통신을 진행했습니다.
 ---
 
-import gitHubNormalImg from "../images/stickers/githubSticker_normal.png"
-import gitHubClickImg from "../images/stickers/githubSticker_click.png"
-import gitHubHoverImg from "../images/stickers/githubSticker_hover.png"
+import github from "../images/stickers/Beauty_github.png"
+import githubHover from "../images/stickers/Beauty_github_hover.png"
+import githubClick from "../images/stickers/Beauty_github_click.png"
+
+import logo from "../images/stickers/Beauty_logo.png"
+import logoHover from "../images/stickers/Beauty_logo_hover.png"
+import logoClick from "../images/stickers/Beauty_logo_click.png"
+
+import video from "../images/stickers/Beauty_video.png"
+import videoHover from "../images/stickers/Beauty_video_hover.png"
+import videoClick from "../images/stickers/Beauty_video_click.png"
+
+import wow from "../images/stickers/Beauty_wow.png"
+import wowHover from "../images/stickers/Beauty_wow_hover.png"
+import wowClick from "../images/stickers/Beauty_wow_click.png"
+
+import youtube from "../images/stickers/Beauty_youtube.png"
+import youtubeHover from "../images/stickers/Beauty_youtube_hover.png"
+import youtubeClick from "../images/stickers/Beauty_youtube_click.png"
 
 <Sticker
-  normalImg={gitHubNormalImg}
-  hoverImg={gitHubHoverImg}
-  clickImg={gitHubClickImg}
-  alt={"gitHub"}
-  width={"140"}
-  height={"140"}
-  url={"https://github.com/Yenowme"}
-  positionTop={"80%"}
-  positionLeft={"0"}
-  rotate={""}
+  normalImg={github}
+  hoverImg={githubHover}
+  clickImg={githubClick}
+  alt={"beauty-gitHub"}
+  width={"215"}
+  height={"207"}
+  url={"https://github.com/Beauty-Saurus/Beauty-Saurus"}
+  positionTop={"59%"}
+  positionLeft={"85%"}
+  rotate={"-18"}
 />
 
 <Sticker
-  normalImg={gitHubNormalImg}
-  hoverImg={gitHubHoverImg}
-  clickImg={gitHubClickImg}
-  alt={"gitHub"}
-  width={"140"}
-  height={"140"}
+  normalImg={logo}
+  hoverImg={logoHover}
+  clickImg={logoClick}
+  alt={"beauty-logo"}
+  width={"167"}
+  height={"124"}
   url={"https://github.com/Yenowme"}
   positionTop={"80%"}
-  positionLeft={"90%"}
-  rotate={""}
+  positionLeft={"-10%"}
+  rotate={"30"}
+/>
+<Sticker
+  normalImg={video}
+  hoverImg={videoHover}
+  clickImg={videoClick}
+  alt={"beauty-video"}
+  width={"226"}
+  height={"148"}
+  url={"https://github.com/Yenowme"}
+  positionTop={"78%"}
+  positionLeft={"60%"}
+  rotate={"-8"}
 />
 
 <Sticker
-  normalImg={gitHubNormalImg}
-  hoverImg={gitHubHoverImg}
-  clickImg={gitHubClickImg}
-  alt={"gitHub"}
-  width={"140"}
-  height={"140"}
+  normalImg={wow}
+  hoverImg={wowHover}
+  clickImg={wowClick}
+  alt={"beauty-wow"}
+  width={"215"}
+  height={"215"}
+  url={"https://news.v.daum.net/v/20211130195044187"}
+  positionTop={"0%"}
+  positionLeft={"-5%"}
+  rotate={"0"}
+/>
+
+<Sticker
+  normalImg={youtube}
+  hoverImg={youtubeHover}
+  clickImg={youtubeClick}
+  alt={"beauty-youtube"}
+  width={"236"}
+  height={"182"}
   url={"https://github.com/Yenowme"}
-  positionTop={"70%"}
-  positionLeft={"80%"}
-  rotate={""}
+  positionTop={"83%"}
+  positionLeft={"70%"}
+  rotate={"15"}
 />
