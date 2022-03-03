@@ -25,7 +25,6 @@ export default function Sticker({
     const shiftX = target.current.parentElement.offsetLeft
     const shiftY = target.current.parentElement.offsetTop
 
-    console.log(shiftY)
     setTop(`${y - shiftY - height / 2}px`)
     setLeft(`${x - shiftX - width / 2}px`)
   }

@@ -6,6 +6,7 @@ import "./layout.css"
 import Header from "../header/header"
 import Sticker from "../sticker/sticker"
 import Divider from "../divider/divider"
+import Footer from "../footer/Footer"
 
 const shortcodes = { Sticker, Divider }
 
@@ -16,6 +17,7 @@ const Layout = ({ children }) => {
         <Header />
         <main>{children}</main>
       </div>
+      <Footer />
     </MDXProvider>
   )
 }

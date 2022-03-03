@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import * as React from "react"
 import { Link } from "gatsby"
 import * as headerStyle from "./header.module.css"
