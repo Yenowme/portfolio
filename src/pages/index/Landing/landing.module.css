@@ -25,6 +25,8 @@
 }
 
 .down {
+  cursor: pointer;
+
   position: absolute;
   bottom: 30px;
 }
