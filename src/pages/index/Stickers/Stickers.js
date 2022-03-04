@@ -2,33 +2,33 @@ import * as React from "react"
 
 import Sticker from "../../../components/sticker/sticker"
 
-import gitHubNormalImg from "../../../images/stickers/githubSticker_normal.png"
-import gitHubClickImg from "../../../images/stickers/githubSticker_click.png"
-import gitHubHoverImg from "../../../images/stickers/githubSticker_hover.png"
+import gitHubNormalImg from "../../../../static/stickers/githubSticker_normal.png"
+import gitHubClickImg from "../../../../static/stickers/githubSticker_click.png"
+import gitHubHoverImg from "../../../../static/stickers/githubSticker_hover.png"
 
-import NameNormalImg from "../../../images/stickers/NameSticker_normal.png"
-import NameHoverImg from "../../../images/stickers/NameSticker_hover.png"
-import NameClickImg from "../../../images/stickers/NameSticker_click.png"
+import NameNormalImg from "../../../../static/stickers/NameSticker_normal.png"
+import NameHoverImg from "../../../../static/stickers/NameSticker_hover.png"
+import NameClickImg from "../../../../static/stickers/NameSticker_click.png"
 
-import starNormalImg from "../../../images/stickers/StarSticker_normal.png"
-import starHoverImg from "../../../images/stickers/StarSticker_hover.png"
-import starClickImg from "../../../images/stickers/StarSticker_click.png"
+import starNormalImg from "../../../../static/stickers/StarSticker_normal.png"
+import starHoverImg from "../../../../static/stickers/StarSticker_hover.png"
+import starClickImg from "../../../../static/stickers/StarSticker_click.png"
 
-import start2NormalImg from "../../../images/stickers/StarSticker_s_normal.png"
-import start2HoverImg from "../../../images/stickers/StarSticker_s_hover.png"
-import start2ClickImg from "../../../images/stickers/StarSticker_s_click.png"
+import start2NormalImg from "../../../../static/stickers/StarSticker_s_normal.png"
+import start2HoverImg from "../../../../static/stickers/StarSticker_s_hover.png"
+import start2ClickImg from "../../../../static/stickers/StarSticker_s_click.png"
 
-import main_doc from "../../../images/stickers/main_doc.png"
-import main_doc_hover from "../../../images/stickers/main_doc_hover.png"
-import main_doc_click from "../../../images/stickers/main_doc_click.png"
+import main_doc from "../../../../static/stickers/main_doc.png"
+import main_doc_hover from "../../../../static/stickers/main_doc_hover.png"
+import main_doc_click from "../../../../static/stickers/main_doc_click.png"
 
-import main_illust from "../../../images/stickers/main_illust.png"
-import main_illust_hover from "../../../images/stickers/main_illust_hover.png"
-import main_illust_click from "../../../images/stickers/main_illust_click.png"
+import main_illust from "../../../../static/stickers/main_illust.png"
+import main_illust_hover from "../../../../static/stickers/main_illust_hover.png"
+import main_illust_click from "../../../../static/stickers/main_illust_click.png"
 
-import star_white from "../../../images/stickers/star_white.png"
-import star_white_hover from "../../../images/stickers/star_white_hover.png"
-import star_white_click from "../../../images/stickers/star_white_click.png"
+import star_white from "../../../../static/stickers/star_white.png"
+import star_white_hover from "../../../../static/stickers/star_white_hover.png"
+import star_white_click from "../../../../static/stickers/star_white_click.png"
 
 const Stickers = () => (
   <>
