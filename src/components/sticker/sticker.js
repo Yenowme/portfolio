@@ -87,7 +87,7 @@ export default function Sticker({
         }}
       />
       <img src={hoverImg} alt={""} style={{ display: "none" }} />
-      <img src={normalImg} alt={""} style={{ display: "none" }} />
+      <img src={clickImg} alt={""} style={{ display: "none" }} />
     </div>
   )
 }
