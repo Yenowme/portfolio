@@ -86,6 +86,8 @@ export default function Sticker({
           transform: rotate ? `rotate(${rotate}deg)` : "",
         }}
       />
+      <img src={hoverImg} alt={""} style={{ display: "none" }} />
+      <img src={clickImg} alt={""} style={{ display: "none" }} />
     </div>
   )
 }
