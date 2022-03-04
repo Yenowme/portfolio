@@ -97,6 +97,9 @@ const Stickers = () => (
       positionLeft={"27%"}
       positionTop={"0%"}
       rotate={"13"}
+      url={
+        "https://gratis-cardboard-45e.notion.site/Jeong-yena-4301610dfde64bb4b34033e145c01acf"
+      }
     />
 
     <Sticker
